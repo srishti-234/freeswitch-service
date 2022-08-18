@@ -35,7 +35,7 @@ paths:
       responses:
         200:
           description: success and returns some html text
-  /api/v1/assign-number::
+  /api/v1/assign-number:
     get:
       summary: Assign a number
       operationId: assign-number
@@ -46,7 +46,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/assignNumberResp'
-  /api/v1/call-recording::
+  /api/v1/call-recording:
     get:
       summary: Fetch call recordings
       operationId: call-recording
