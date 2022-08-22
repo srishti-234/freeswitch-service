@@ -6,6 +6,7 @@ window.onload = function() {
     url: "./swagger.yaml",
     dom_id: '#swagger-ui',
     deepLinking: true,
+    withCredentials: true,
     requestInterceptor:
        (request) => {
        console.log("request.credentials 1", request.credentials)
