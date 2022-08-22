@@ -8,6 +8,7 @@ window.onload = function() {
     deepLinking: true,
     requestInterceptor:
        (request) => {
+       console.log("request.credentials", request.credentials)
        request.credentials = 'include'
        return request;
     },
