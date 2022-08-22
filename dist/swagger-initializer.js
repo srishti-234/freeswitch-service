@@ -10,7 +10,6 @@ window.onload = function() {
        (request) => {
        console.log("request.credentials 1", request.credentials)
        request.credentials = 'include'
-       request.mode = 'no-cors',
        console.log("request.credentials 2", request.credentials)
        return request;
     },
