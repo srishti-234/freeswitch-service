@@ -9,7 +9,7 @@ window.onload = function() {
     requestInterceptor:
        (request) => {
        console.log("request.credentials 1", request.credentials)
-       request.credentials = 'include'
+       request.credentials = true
        console.log("request.credentials 2", request.credentials)
        return request;
     },
