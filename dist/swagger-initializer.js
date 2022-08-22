@@ -6,6 +6,11 @@ window.onload = function() {
     url: "./swagger.yaml",
     dom_id: '#swagger-ui',
     deepLinking: true,
+    requestInterceptor:
+       (request) => {
+       request.credentials = 'include'
+       return request;
+    },
     presets: [
       SwaggerUIBundle.presets.apis,
       SwaggerUIStandalonePreset
