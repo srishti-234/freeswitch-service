@@ -10,7 +10,7 @@ window.onload = function() {
        (request) => {
        console.log("request.credentials 1", request.credentials)
        request.credentials = 'include'
-       console.log("request.credentials 2", request.credentials
+       console.log("request.credentials 2", request.credentials)
        return request;
     },
     presets: [
